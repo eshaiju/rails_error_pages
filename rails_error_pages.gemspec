@@ -14,4 +14,5 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.homepage     = 'https://github.com/shaijunonu/rails_error_pages'
   s.add_development_dependency 'rails', '~> 3.2.0'
+  s.add_development_dependency "rspec"
 end
