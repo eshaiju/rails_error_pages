@@ -1,0 +1,9 @@
+Description:
+    Puts the minified melonjs library file in the vendor directory, and sets up the application.js file to load it properly.
+
+Example:
+    rails generate melonjs
+
+    This will create:
+        - vendor/assets/javascripts/melonJS-0.9.4.js
+        - app/assets/javascripts/application.js
