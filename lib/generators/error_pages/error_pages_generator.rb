@@ -13,4 +13,13 @@ class ErrorPagesGenerator < Rails::Generators::Base
   def add_exceptions_app
     application %Q{config.exceptions_app = self.routes} 
   end
+
+  def copy_controller
+    copy_file "errors_controller.rb", "app/controllers/errors_controller.rb"
+  end
+
+  def copy_views
+     directory "errors", "app/views/errors"
+  end
+
 end
