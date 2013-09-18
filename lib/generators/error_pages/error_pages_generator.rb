@@ -22,4 +22,8 @@ class ErrorPagesGenerator < Rails::Generators::Base
      directory "errors", "app/views/errors"
   end
 
+  def copy_images
+    copy_file "images/not-found-error.png", "app/assets/images/not-found-error.png"
+  end
+
 end

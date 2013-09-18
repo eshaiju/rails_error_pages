@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name         = 'rails_error_pages'
-  s.version      = '1.0.2'
+  s.version      = '1.0.3'
   s.date         = '2013-09-18'
   s.summary      = "Error page generator"
   s.description  = "Error page generator gem"
