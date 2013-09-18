@@ -1,16 +1,16 @@
 require 'rails/generators/base'
-class MelonjsGenerator < Rails::Generators::Base
+class ErrorPagesGenerator < Rails::Generators::Base
   source_root File.expand_path('../templates', __FILE__)
-
-  def generate_melonjs_library
-    copy_file "melonJS-0.9.4.js", "vendor/assets/javascripts/melonJS-0.9.4.js"
+   
+  def add_routes
+    route %Q{
+      match '/404', :to => 'errors#not_found'
+      match '/422', :to => 'errors#server_error'
+      match '/500', :to => 'errors#server_error'
+     }
   end
 
-  def generate_manifest
-    copy_file "application.js", "app/assets/javascripts/application.js"
-  end
-
-  def generate_base_files
-    copy_file "main.js.coffee", "app/assets/javascripts/main.js.coffee"
+  def add_exceptions_app
+    application %Q{config.exceptions_app = self.routes} 
   end
 end

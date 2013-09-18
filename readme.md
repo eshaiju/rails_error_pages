@@ -1,6 +1,6 @@
 # Readme
 
-This is a ruby gem for a error_pages generator. 
+This is a ruby gem for a 404 and 500 error page generation. 
 
 ## Installation
 

@@ -1,5 +1,5 @@
 Gem::Specification.new do |s|
-  s.name         = 'error-page-generator'
+  s.name         = 'error_pages'
   s.version      = '1.0.0'
   s.date         = '2013-09-18'
   s.summary      = "Error page generator"
