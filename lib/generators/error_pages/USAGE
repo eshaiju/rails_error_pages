@@ -1,8 +1,0 @@
-Description:
-   
-
-Example:
-    rails generate error_pages
-
-    This will create:
-        

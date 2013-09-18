@@ -11,5 +11,6 @@ Add it to your Gemfile
 Then simply run it:
 
     bundle install
-    rails g error_pages
+
+    rails g rails_error_pages
 

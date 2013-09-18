@@ -1,0 +1,1 @@
+require 'rails_error_pages/base'

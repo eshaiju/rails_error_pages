@@ -1,12 +1,12 @@
 require 'rails/generators/base'
-class ErrorPagesGenerator < Rails::Generators::Base
+class RailsErrorPagesGenerator < Rails::Generators::Base
   source_root File.expand_path('../templates', __FILE__)
    
   def add_routes
     route %Q{
-      match '/404', :to => 'errors#not_found'
-      match '/422', :to => 'errors#server_error'
-      match '/500', :to => 'errors#server_error'
+      get '/404', :to => 'errors#not_found'
+      get '/422', :to => 'errors#unacceptable'
+      get '/500', :to => 'errors#server_error'
      }
   end
 
@@ -15,11 +15,11 @@ class ErrorPagesGenerator < Rails::Generators::Base
   end
 
   def copy_controller
-    copy_file "errors_controller.rb", "app/controllers/errors_controller.rb"
+    copy_file "controllers/errors_controller.rb", "app/controllers/errors_controller.rb"
   end
 
   def copy_views
-     directory "errors", "app/views/errors"
+     directory "views/errors", "app/views/errors"
   end
 
   def copy_images
