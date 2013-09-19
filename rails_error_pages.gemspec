@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.date         = '2013-09-18'
   s.summary      = 'Generate error pages in your Rails application'
   s.description  = 'Generate error pages in your Rails application'
-  s.authors      = ["eshaiju"]
+  s.authors      = ["shaijunonu"]
   s.email        = 'eshaiju@gmail.com'
   s.files        = Dir.glob("{lib}/**/*")
   s.require_path = 'lib'
